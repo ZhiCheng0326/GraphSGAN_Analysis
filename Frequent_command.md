@@ -1,17 +1,21 @@
 #To construct grid map....
+
 ##1. Change robot env variable to Hokuyo
 ```
 TURTLEBOT_3D_SENSOR=AstraHokuyo
 echo $TURTLEBOT_3D_SENSOR         #check if  launch successfully
 ```
+
 ##2. Launch Hokuyo robot
 ```
 roslaunch robot_hokuyo_astra my_world_hk.launch world_file:=/home/zlee/catkin_ws/src/turtlebot_custom_gazebo_worlds/hw2.world
 ```
+
 ##3. Launch gmapping_demo.launch
 ```
 roslaunch robot_hokuyo_astra gmapping_demo.launch
 ```
+
 ##4. Launch RVIZ
 ```
 roslaunch turtlebot_rviz_launchers view_navigation.launch
@@ -22,6 +26,7 @@ Note: Change global & local costmap topic to "/map"
 ```
 roslaunch turtlebot_teleop keyboard_teleop.launch
 ```
+
 ##6. Save the grid map result
 ```
 rosrun map_server map_saver -f /home/zlee/catkin_ws/src/turtlebot_learn/maps/E1
