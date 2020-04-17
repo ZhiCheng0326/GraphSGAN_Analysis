@@ -1,10 +1,10 @@
 # To construct grid map....
 
 ## 1. Change robot env variable to Hokuyo
-
->TURTLEBOT_3D_SENSOR=AstraHokuyo
->echo $TURTLEBOT_3D_SENSOR         #check if  launch successfully
-
+```
+TURTLEBOT_3D_SENSOR=AstraHokuyo
+echo $TURTLEBOT_3D_SENSOR         #check if  launch successfully
+```
 
 ## 2. Launch Hokuyo robot
 ```
