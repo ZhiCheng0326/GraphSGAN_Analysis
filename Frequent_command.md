@@ -70,11 +70,11 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/zlee/catkin_
 ```
 rqt_image_view
 ```
-### Get current coordinate of turtlebot
+## Get current coordinate of turtlebot
 ```
 rosrun tf tf_echo /map /base_footprint
 ```
-###Shutdown ROS
+## Shutdown ROS
 ```
 def myhook():
   print "shutdown time!"
