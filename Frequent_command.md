@@ -109,4 +109,6 @@ rospy.on_shutdown(myhook)
 
 ```
 ## To launch 3 turtlebots...
+```
 roslaunch multi_robot main.launch world_file:=/home/zlee/catkin_ws/src/turtlebot_custom_gazebo_worlds/hw2_v2.world
+```
