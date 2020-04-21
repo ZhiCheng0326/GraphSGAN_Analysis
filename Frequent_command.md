@@ -100,7 +100,7 @@ rqt_image_view
 ```
 rosrun tf tf_echo /map /base_footprint
 ```
-###Shutdown ROS
+### Shutdown ROS
 ```
 def myhook():
   print "shutdown time!"
