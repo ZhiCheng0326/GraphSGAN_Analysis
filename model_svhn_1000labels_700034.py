@@ -727,7 +727,7 @@ def consistency_costs_f(logits1, logits2, cons_coefficient, name=None):
         mean_cost = tf.multiply(tf.reduce_mean(per_sample), cons_coefficient, name=scope)
         assert_shape(mean_cost, [])
         return mean_cost
-
+#
 def embedding_costs_f(logits, labels, name=None): #dim of logits and labels = (b,m)
     with tf.name_scope(name, "embedding_costs_f") as scope:
         loss = -tf.reduce_sum(labels * tf.log(tf.add(logits, 1.0e-10)))
