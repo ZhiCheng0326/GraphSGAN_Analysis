@@ -740,6 +740,5 @@ def embedding_costs_f(logits, labels, name=None): #dim of logits and labels = (b
         # labeled_sum = tf.reduce_sum(per_sample)
         # total_count = tf.to_float(tf.shape(per_sample)[0])
         # mean_cost = tf.div(labeled_sum, total_count, name=scope)
-        #
 
     return mean_cost
